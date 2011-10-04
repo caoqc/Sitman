@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="ivory">#FFFFF0</color> <!--象牙色 -->
+	<color name="darkgray">#A9A9A9</color><!--暗灰色 -->
+	<color name="seashell">#FFF5EE</color> <!--海贝色 -->
+	<color name="springgreen">#00FF7F</color><!--春绿色 -->
+	<color name="green">#008000</color><!--绿色 -->
+	<color name="black">#000000</color><!--黑色 -->
+	<color name="gainsboro">#DCDCDC</color><!--淡灰色 -->
+	<color name="burlywood">#DEB887</color><!--实木色 -->
+	<color name="lightgoldenrodyellow">#FAFAD2</color><!--亮金黄色 -->
+	<color name="azure">#F0FFFF</color><!--天蓝色 -->
+	<color name="red">#FF0000</color><!--红色 -->
+	<color name="gray">#ffff0000</color>
+	
+</resources>

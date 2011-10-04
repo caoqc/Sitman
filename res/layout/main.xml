@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/ivory">
+
+	<!-- hint information -->
+	<LinearLayout android:id="@+id/part_one"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		android:layout_marginTop="5dp" android:gravity="center_vertical"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+		android:background="@color/lightgoldenrodyellow">
+		<TextView android:id="@+id/current_time" android:text="@string/current_area"
+			android:textColor="@color/green" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="18dp" />
+		<TextView android:id="@+id/play_type_status" android:text="@string/play_type"
+			android:textColor="@color/green" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginRight="8dp"
+			android:layout_weight="1" />
+		<TextView android:id="@+id/play_process" android:text="@string/play_process"
+			android:textColor="@color/green" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="8dp" />
+
+	</LinearLayout>
+
+	<!-- play position -->
+	<LinearLayout android:id="@+id/part_two"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		android:layout_marginTop="8dp" android:gravity="center_vertical"
+		android:layout_below="@id/part_one">
+
+		<SeekBar android:id="@+id/process_seekbar"
+			android:layout_height="wrap_content" android:layout_width="fill_parent" />
+
+	</LinearLayout>
+
+	<!-- text -->
+	<LinearLayout android:id="@+id/text_part"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp" android:layout_marginTop="5dp"
+		android:background="@color/burlywood" android:layout_below="@id/part_two">
+		<TextView
+			android:text="The country committed aggression when they cross the border of the other country."
+			android:id="@+id/read_text" android:textSize="16sp"
+			android:layout_width="fill_parent" android:layout_height="100dp"
+			android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+			android:scrollbars="vertical" />
+	</LinearLayout>
+
+	<!-- listview -->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:fitsSystemWindows="true" android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp" android:layout_marginBottom="10dp"
+		android:background="@color/gainsboro" android:layout_below="@id/text_part"
+		android:layout_above="@+id/control_part">
+
+		<ListView android:id="@+id/break_list" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp" android:paddingRight="2dp"
+			android:layout_weight="2" android:background="@color/seashell" />
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:orientation="vertical" android:gravity="center_vertical">
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_weight="1"
+				android:layout_marginLeft="5dp" android:gravity="center_vertical">
+
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_weight="1"
+				android:layout_marginLeft="5dp" android:gravity="center_vertical">
+
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_weight="1"
+				android:layout_marginLeft="5dp" android:gravity="center_vertical">
+
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@android:drawable/ic_btn_speak_now"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+				<ImageButton android:id="@+id/imageView7"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_weight="1" android:src="@drawable/icon"
+					android:onClick="btnClickDeal" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<!-- control part -->
+	<LinearLayout android:id="@+id/control_part"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+		android:layout_marginBottom="8dp" android:gravity="center_vertical"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true">
+		<!-- <ImageButton android:id="@+id/prior_btn" android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" android:layout_weight="1" android:src="@android:drawable/ic_media_previous" 
+			android:onClick="btnClickDeal" /> -->
+		<ImageButton android:id="@+id/option_btn"
+			android:layout_height="50dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:src="@drawable/icon_option"
+			android:scaleType="fitXY" android:onClick="btnClickDeal" />
+		<ImageButton android:id="@+id/rew_btn"
+			android:layout_height="50dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:src="@android:drawable/ic_media_rew"
+			android:onClick="btnClickDeal" />
+		<ImageButton android:id="@+id/play_btn"
+			android:layout_height="50dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:src="@android:drawable/ic_media_play"
+			android:onClick="btnClickDeal" />
+		<ImageButton android:id="@+id/ff_btn"
+			android:layout_height="50dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:src="@android:drawable/ic_media_ff"
+			android:onClick="btnClickDeal" />
+		<!-- <ImageButton android:id="@+id/next_btn" android:layout_height="50dp" 
+			android:layout_width="fill_parent" android:layout_weight="1" android:src="@android:drawable/ic_media_next" 
+			android:onClick="btnClickDeal" /> -->
+		<ImageButton android:id="@+id/choose_btn"
+			android:layout_height="50dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:src="@drawable/icon_choose_music"
+			android:scaleType="fitXY" android:onClick="btnClickDeal" />
+	</LinearLayout>
+
+</RelativeLayout>
+
