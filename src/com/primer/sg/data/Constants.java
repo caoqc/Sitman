@@ -1,5 +1,6 @@
 package com.primer.sg.data;
 
+
 public class Constants {
 	
 	//播放模式

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Spinner;
-
 import com.primer.sg.R;
 import com.primer.sg.data.Constants;
 import com.primer.sg.data.MyApplication;
