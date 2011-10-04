@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingTop="18dp"
+	android:paddingLeft="8dp" android:layout_marginRight="8dp">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_vertical">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/play_mode" />
+		<Spinner android:id="@+id/play_mode" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:entries="@array/playmode" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_vertical">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/repeat_time" />
+		<Spinner android:id="@+id/repeat_time" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:entries="@array/repeat_time" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_vertical">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/repeat_done" />
+		<Spinner android:id="@+id/repeat_option" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:entries="@array/after_repeat" />
+	</LinearLayout>
+
+	<CheckBox android:id="@+id/repeat_pause" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/repeat_pause"
+		android:layout_marginLeft="50dp" android:layout_marginTop="10dp"
+		android:layout_marginBottom="30dp" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center">
+		<Button android:id="@+id/ok_btn" android:layout_width="80dp"
+			android:layout_height="wrap_content" android:layout_marginRight="68dp"
+			android:text="@string/ok_button" android:onClick="dealButtonClick" />
+		<Button android:id="@+id/cancel_btn" android:layout_width="80dp"
+			android:layout_height="wrap_content" android:text="@string/cancel_button"
+			android:onClick="dealButtonClick" />
+	</LinearLayout>
+
+</LinearLayout>
+
