@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="hello">Hello World, MainActivity!</string>
-	<string name="app_name">sitman</string>
+	<string name="app_name">Reciter</string>
 
 	<string name="current_area">%1$s-%2$s</string>
-	<string name="play_type">%1$s -- %2$s</string>
 	<string name="play_process">%1$s/%2$s</string>
 
 	<string name="play_mode">Play mode</string>
-	<string name="repeat_time">Repeat area times</string>
+	<string name="repeat_time">Repeat times</string>
 	<string name="repeat_done">Repeat area done</string>
 	<string name="repeat_pause"> pause after repeat</string>
+	
 	<string-array name="playmode">
 		<item>normal</item>
 		<item>repeat</item>
 		<item>limit repeat</item>
 		<item>random</item>
 	</string-array>
+	
 	<string-array name="repeat_time">
 		<item>1</item>
 		<item>2</item>
 		<item>3</item>
 		<item>4</item>
 		<item>5</item>
+		<item>6</item>
 	</string-array>
+	
 	<string-array name="after_repeat">
 		<item>ring hint</item>
 		<item>pause 3 seconds</item>
@@ -33,36 +35,9 @@
 	<string name="ok_button">Ok</string>
 	<string name="cancel_button">Cancel</string>
 
-	<string-array name="listarray">
-		<item>00:10:24</item>
-		<item>00:10:56</item>
-		<item>00:12:24</item>
-		<item>00:13:24</item>
-		<item>00:14:24</item>
-		<item>00:14:34</item>
-		<item>00:15:28</item>
-		<item>00:10:24</item>
-		<item>00:10:56</item>
-		<item>00:12:24</item>
-		<item>00:13:24</item>
-		<item>00:14:24</item>
-		<item>00:14:34</item>
-		<item>00:15:28</item>
-		<item>00:10:24</item>
-		<item>00:10:56</item>
-		<item>00:12:24</item>
-		<item>00:13:24</item>
-		<item>00:14:24</item>
-		<item>00:14:34</item>
-		<item>00:15:28</item>
-		<item>00:10:24</item>
-		<item>00:10:56</item>
-		<item>00:12:24</item>
-		<item>00:13:24</item>
-		<item>00:14:24</item>
-		<item>00:14:34</item>
-		<item>00:15:28</item>
-	</string-array>
+	<string name="setting_menu">setting</string>
+	<string name="choose_menu">choose</string>
+	<string name="download_menu">download</string>
 
     <string name="location">Location</string>
     <string name="cant_read_folder">folder can\'t be read!</string>

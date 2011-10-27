@@ -1,61 +1,44 @@
 package com.primer.sg.data;
 
 
+import java.util.ArrayList;
+
 import android.app.Application;
 import android.media.MediaPlayer;
 
 public class MyApplication extends Application {
 
+	public static final int MiLLSECOND = 100;  // 1/10毫秒
+	public static final int SECOND = 1000;     //1秒
+	public static final int MINUTE = 60000;    //1分
+	public static final int HOUR = 3600000;    //1小时
+	
 	public MediaPlayer mediaPlayer;
-	
-	//control the player status
-	public Boolean isPlaying;
-	public Boolean isPause;
-	public Boolean isStop;
-	public Boolean isRelease;
-	
+
 	//play type option
 	public int playMode;
 	public int repeatTimes;
-//	public Boolean isPauseOverRepeat;
+	public Boolean isPauseOverRepeat;
+	public int waitTime;
 	public int repeatHintType;
 	
-	//file to play
-	public String playSong;
-	public String playSongBack;
-	
-	//repeat area
-	public long beginArea;
-	public long endArea;
-	
-	//repeated times
-	public int repeatedTimes;
-	public long playingPosition;
+	public ArrayList<String> breakPointList;
+	public ArrayList<String> pointTextList;
+	public ArrayList<Boolean> validPointList;
+	public ArrayList<Integer> timePointList;
 	
 	@Override
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
 		
-		isPlaying = false; 
-		isRelease = true;
-		isPause = false;
-		isStop = true;
-		
 		playMode = Constants.PLAYMODE_NORMAL;
 		repeatTimes = 1;
-		repeatHintType = Constants.HINTTYPE_RING;
-
-		beginArea = 0;
-		endArea = 0;
-		
-		repeatedTimes = 0;
-		playingPosition = 0;
-		
-		playSong = "/sdcard/songs/leo sayer - i love you more than i can say.mp3";
+		waitTime = 300;
+		isPauseOverRepeat = true;
 		
 		mediaPlayer = new MediaPlayer();
 		
 	}
-
+	
 }

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:gravity="center_vertical" android:background="@color/seashell">
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"	
+	android:orientation="horizontal"
+	android:background="@color/seashell">
 
-	<CheckBox android:id="@+id/chk_point" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_centerVertical="true"
-		android:checked="true" />
-	<TextView android:id="@+id/break_point" android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_centerVertical="true"
-		android:layout_toRightOf="@id/chk_point" android:text=""
-		android:textColor="@color/red" android:textSize="14sp" />
+	<CheckBox 
+		android:id="@+id/chk_point" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_centerVertical="true"
+		android:focusable="false"
+		android:clickable="false"
+		android:layout_marginRight="5dp" />
+		
+	<TextView 
+		android:id="@+id/break_point" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1"
+		android:layout_centerVertical="true"
+		android:textColor="@color/red" 
+		android:textSize="14sp" />
 
-</RelativeLayout>
+</LinearLayout>

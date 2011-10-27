@@ -126,8 +126,12 @@ public class FileDialog extends ListActivity {
                                 dirsMap.put(dirName, dirName);
                                 dirsPathMap.put(dirName, file.getPath());
                         } else {
-                                filesMap.put(file.getName(), file.getName());
+                        	String nameString  = file.getName();
+                        	int pos = nameString.lastIndexOf('.');
+                        	if (pos!=-1 && ".mp3".equalsIgnoreCase(nameString.substring(pos, nameString.length()))) {
+                        		filesMap.put(file.getName(), file.getName());
                                 filesPathMap.put(file.getName(), file.getPath());
+							}
                         }
                 }
                 item.addAll(dirsMap.tailMap("").values());
