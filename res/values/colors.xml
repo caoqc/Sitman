@@ -14,4 +14,9 @@
 	<color name="red">#FF0000</color> <!--红色 -->
 	<color name="gray">#ffff0000</color>
 	
+	<color name="grey">#696969</color>	
+    <color name="brown">#A52A2A</color>
+    <color name="orange">#FFA500</color>
+    <color name="purple">#451A74</color>
+	
 </resources>

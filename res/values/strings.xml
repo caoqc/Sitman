@@ -2,7 +2,8 @@
 <resources>
 
 	<string name="app_name">Reciter</string>
-
+	
+	<string name="header_title">%1$ -- %2$s</string>
 	<string name="current_area">%1$s-%2$s</string>
 	<string name="play_process">%1$s/%2$s</string>
 
@@ -49,4 +50,5 @@
     <string name="no_data">No Data</string>
         
 
+	<string name="keystore_password">12345678</string>
 </resources>

@@ -103,7 +103,7 @@ public class SitmanActivity extends Activity {
         getViewHandler();
     	
 		myApplication = (MyApplication) getApplication();
-		setTitle(getString(R.string.app_name) + " -- normal");
+		//setTitle(getString(R.string.app_name) + " -- normal");
 		
 //		container.setOnLongClickListener(new OnLongClickListener() {
 //			
@@ -136,24 +136,24 @@ public class SitmanActivity extends Activity {
 //			}
 //		});
 
-		findViewById(R.id.part_super).setOnLongClickListener(new OnLongClickListener() {
-			
-			@Override
-			public boolean onLongClick(View v) {
-				// TODO Auto-generated method stub
-				callPointListView();
-				return true;
-			}
-		});
-		findViewById(R.id.part_one).setOnLongClickListener(new OnLongClickListener() {
-			
-			@Override
-			public boolean onLongClick(View v) {
-				// TODO Auto-generated method stub
-				callPointListView();
-				return true;
-			}
-		});	
+//		findViewById(R.id.part_super).setOnLongClickListener(new OnLongClickListener() {
+//			
+//			@Override
+//			public boolean onLongClick(View v) {
+//				// TODO Auto-generated method stub
+//				callPointListView();
+//				return true;
+//			}
+//		});
+//		findViewById(R.id.part_one).setOnLongClickListener(new OnLongClickListener() {
+//			
+//			@Override
+//			public boolean onLongClick(View v) {
+//				// TODO Auto-generated method stub
+//				callPointListView();
+//				return true;
+//			}
+//		});	
 		 
 //		Drawable thumb = (Drawable) getResources().getDrawable(R.drawable.thumb_shape);
 //		processSeekBar.setThumb(thumb);
@@ -181,16 +181,16 @@ public class SitmanActivity extends Activity {
 
 		});
 		
-		gallery.setAdapter(new ImageAdapter(this));
-		gallery.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView parent, View v, int position, long id) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-		});
+//		gallery.setAdapter(new ImageAdapter(this));
+//		gallery.setOnItemClickListener(new OnItemClickListener() {
+//
+//			@Override
+//			public void onItemClick(AdapterView parent, View v, int position, long id) {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//			
+//		});
 		
 		contentString = "";
 		currentPosition = 0;
@@ -220,12 +220,12 @@ public class SitmanActivity extends Activity {
 	}
 	
 	private void getViewHandler() {
-		container = (FrameLayout) findViewById(R.id.frame_parent);
-        listParent = (LinearLayout) findViewById(R.id.list_parent);
+//		container = (FrameLayout) findViewById(R.id.frame_parent);
+//        listParent = (LinearLayout) findViewById(R.id.list_parent);
         
         songTextView = (TextView) findViewById(R.id.song_name);
         
-        gallery = (Gallery) findViewById(R.id.gallery_view);
+//        gallery = (Gallery) findViewById(R.id.gallery_view);
         
         currentTimeTextView = (TextView) findViewById(R.id.current_time);
         playProcesstTextView = (TextView) findViewById(R.id.play_process);
@@ -238,7 +238,7 @@ public class SitmanActivity extends Activity {
         recordButton = (ImageButton) findViewById(R.id.start_record);
         playButton = (ImageButton) findViewById(R.id.play_btn);
 
-        breakListView = (ListView) findViewById(R.id.break_list);
+//        breakListView = (ListView) findViewById(R.id.break_list);
 	}
     
     @Override
@@ -344,28 +344,28 @@ public class SitmanActivity extends Activity {
 //				
 //				break;
 				
-			case R.id.all_point:
-				if (playingSongString.length()>0) {
-					int count = myApplication.validPointList.size();
-					for (int i = 0; i < count; i++) {
-						myApplication.validPointList.set(i, true);
-						listItem.get(i).put("Check", true);
-					}
-					breakListView.invalidateViews();
-				}
-				
-				break;
-				
-			case R.id.no_point:
-				if (playingSongString.length()>0) {
-					int count = myApplication.validPointList.size();
-					for (int i = 0; i < count; i++) {
-						myApplication.validPointList.set(i, false);
-						listItem.get(i).put("Check", false);
-					}
-					breakListView.invalidateViews();
-				}
-				break;
+//			case R.id.all_point:
+//				if (playingSongString.length()>0) {
+//					int count = myApplication.validPointList.size();
+//					for (int i = 0; i < count; i++) {
+//						myApplication.validPointList.set(i, true);
+//						listItem.get(i).put("Check", true);
+//					}
+//					breakListView.invalidateViews();
+//				}
+//				
+//				break;
+//				
+//			case R.id.no_point:
+//				if (playingSongString.length()>0) {
+//					int count = myApplication.validPointList.size();
+//					for (int i = 0; i < count; i++) {
+//						myApplication.validPointList.set(i, false);
+//						listItem.get(i).put("Check", false);
+//					}
+//					breakListView.invalidateViews();
+//				}
+//				break;
 		}
 	}
 
